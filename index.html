@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Jokes with .then()</title>
+  <link rel="shortcut icon" href="allen.jpg" type="image/x-icon">
+ <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+  
+    .container {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      max-width: 500px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    h1 {
+      font-size: 2.2em;
+      color: #4a4a4a;
+      margin-bottom: 20px;
+    }
+  
+    #joke {
+      font-size: 1.1em;
+      font-weight: 400;
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      min-height: 100px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      color: #555;
+    }
+  
+    button {
+      font-size: 1.1em;
+      padding: 12px 24px;
+      background: #5b86e5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    button:hover {
+      background: #3a58c3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  
+    button:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+  
+      #joke {
+        font-size: 1em;
+        padding: 15px;
+      }
+  
+      button {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
+    }
+ </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Programming Jokes</h1>
+    <div id="joke"></div>
+    <button id="newJoke">Get New Joke</button>
+  </div>
+
+  <script src="./js/script.js">
+  </script>
+</body>
+</html>
